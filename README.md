@@ -1,4 +1,4 @@
-# Ecommerce-Follow-Along
+
 # Ecommerce-Follow-Along 
 
 This project is a fully functional *E-Commerce Application* designed to facilitate seamless online shopping experiences for users. The application provides essential features like user authentication, product browsing, cart management, secure checkout, and order tracking.  
