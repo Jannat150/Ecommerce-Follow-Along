@@ -2,7 +2,7 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div className='w-80 h-60 bg-slate-300 rounded-2xl flex-col justify-center items-center mx-auto my-20 shadow-lg'>
+    <div className='w-80 h-60 bg-slate-300 rounded-2xl flex flex-col justify-center items-center mx-auto my-20 shadow-lg'>
         <h1 className='text-4xl'>Login</h1>
       <div >
         <input className='p-3 w-60 m-3 rounded-2xl  ' type="text" placeholder='Enter your username'/>
