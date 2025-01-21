@@ -4,6 +4,7 @@ const { userModel } = require('./model/user.model.js')
 const multer=require('multer')
 const app=express()
 const PORT=8088
+const bcrypt=require("bcrypt");
 
 app.use(express.json())
 
@@ -51,6 +52,27 @@ app.post('/create',async(req,res)=>{
     catch(error){
         console.log(error);
         res.send({"error":error})
+    }
+})
+app.post("/signup",async(req,res)=>{
+    console.log(req.body)
+    const {name,email,password}=req.body
+    const userPresent = await userModel.findOne({email})
+    if (userPresent?.email){
+        res.send("Try login, already exist ")
+    }
+    else{
+        try{
+            bcrypt.hash(password,4,async function(err,hash){
+                const user=new userModel({name,email,password:hash})
+                await user.save()
+                res.send("Sign up successfully")
+            })
+        }
+        catch(err){
+            console.log(err)
+            res.send("something went wrong, pls try again")
+        }
     }
 })
 
