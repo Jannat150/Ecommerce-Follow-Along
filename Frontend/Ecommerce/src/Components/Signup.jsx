@@ -38,7 +38,24 @@ const Signup = () => {
         }
 
         alert("Hurray, you successfully signup")
+    // }
+    let payload={
+        name:form.name,
+        email:form.email,
+        password:form.password
+
     }
+    fetch("http://localhost:8088/signup",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(payload)
+    }).then((res)=>res.json()).then((res)=>{
+        console.log(res)
+    }).catch((error)=>{
+        console.log(error)
+    });
+
+}
 
     return (
         <div className='max-w-md h-auto bg-slate-300 rounded-2xl flex flex-col justify-center items-center mx-auto my-24 p-6 shadow-lg'> <div className='text-4xl mb-4'>Signup</div> 
