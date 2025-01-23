@@ -143,6 +143,27 @@ By the end of this milestone, I will:
 - One of the outcomes gets training in implementing password security storage with hashing algorithms such as bcrypt.
 - Acknowledge the need for data protection and privacy in user authentication systems.
 
+# E-Commerce Application - MERN Stack Project (Milestone 8)
+
+### Overview
+
+Welcome to Milestone 8! In this milestone, I will be working on the development of a frontend product card component and the design of a homepage which dynamically show this cards. Each card will be used to display key product information including name, price, and image. I will also investigate the ways in which these cards can be effectively grouped and presented on the homepage using contemporary layout techniques.
+
+### Key Features
+
+- Reusable Product Card Component: Let's develop a reusable dynamic product card component that shows the name, price, and an image of each product.
+- Dynamic Product Listing: Array mapping is to dynamically render a large number of product cards on the homepage.
+- Flexible Layout: Implement a grid or flexbox layout to arrange all the product cards in a neatly way.
+- Customizable Design: Let the card component be customizable passing product details as props.
+
+### Learning Outcomes 🎯
+
+By the end of this milestone, I will:
+
+- Find learn how to design a dynamic, reusable card component to show product information.
+- Learn the process of how to transfer data as props to personalize the card element for every product.
+- Obtain first-hand experience designing a responsive layout in grid or flexbox to show several cards.
+- Enhance my skillset in UI/UX design by uncluttering and presentation of information in a clear and visually coherent form.
 
 
 
