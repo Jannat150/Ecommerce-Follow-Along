@@ -118,6 +118,32 @@ By the end of this milestone, I will:
 - Understand how to secure storage of user data in the database as well as implement best practices.
 - Supplement the README.md with details of the work completed in Milestone 6.
 
+Here’s the simplified README with just the Overview, Key Features, and Learning Outcomes:.
+
+---
+
+# Milestone 7: User Login Authentication
+
+### Overview
+
+In Milestone 7, I again lay emphasis on the development of a secure backend login endpoint. The main goal is to verify the users' credentials by comparing the entered password of the user with the password of the database which is encrypted. I’ll also use a hashing algorithm like bcrypt to securely hash passwords, ensuring user data protection, privacy, and compliance with security standards.
+
+### Key Features
+
+- User Login Endpoint: This document outlines how to implement a RESTful authentication endpoint securing the user experience by verifying the credentials of the users (email/username  password).
+- Password Hashing: Implement bcrypt to hash the user's password and compares the hash to the hashed password in the database.
+- Error Handling: If the user is not found or passwords are not matched with correct error message.
+- Secure Data Protection: Security is improved even in the event of a database leak by never storing passwords in clear text.
+
+### Learning Outcomes 🎯
+
+By the end of this milestone, you will:
+- Know how to verify user credentials during the login flow.
+- Obtain an idea of how to securely hash passwords to verify authentication.
+- One of the outcomes gets training in implementing password security storage with hashing algorithms such as bcrypt.
+- Acknowledge the need for data protection and privacy in user authentication systems.
+
+
 
 
 
