@@ -122,7 +122,7 @@ Here’s the simplified README with just the Overview, Key Features, and Learnin
 
 ---
 
-# Milestone 7: User Login Authentication
+# E-Commerce Application - MERN Stack Project (Milestone 7)
 
 ### Overview
 
@@ -137,7 +137,7 @@ In Milestone 7, I again lay emphasis on the development of a secure backend logi
 
 ### Learning Outcomes 🎯
 
-By the end of this milestone, you will:
+By the end of this milestone, I will:
 - Know how to verify user credentials during the login flow.
 - Obtain an idea of how to securely hash passwords to verify authentication.
 - One of the outcomes gets training in implementing password security storage with hashing algorithms such as bcrypt.
