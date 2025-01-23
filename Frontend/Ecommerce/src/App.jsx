@@ -6,20 +6,19 @@ import Login from './Components/Login'
 import Home from './Components/Home'
 import Signup from './Components/Signup'
 import { Route, Routes } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     {/* <Login/> */}
-     <Home/>
+    <Navbar/>
      <Routes>
+      <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}></Route>
      </Routes>
-     
-     {/* <Signup/> */}
     </>
   )
 }
