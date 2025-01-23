@@ -6,6 +6,8 @@ const app=express()
 const PORT=8088
 const bcrypt=require("bcrypt");
 const cors=require("cors")
+const jwt = require("jsonwebtoken")
+require("dotenv").config();
 app.use(cors())
 
 app.use(express.json())
@@ -77,6 +79,34 @@ app.post("/signup",async(req,res)=>{
         }
     }
 })
+
+app.post("/login",async(req,res)=>{
+    const {email,password}= req.body;
+
+    try{
+        let user=await userModel.find({email});
+        console.log(user,password);
+        if (user.length>0){
+            let hasPassword= user[0].password;
+            bcrypt.compare(password,hasPassword,function(err,result){
+                if(result){
+                    let token=jwt.sign({"userID": user[0]._id},process.env.SECRET_KEY);
+                    res.send({"msg":"Login successfully","token":token})
+                } else{
+                    res.send({"message":"Invalid "})
+                }
+            })
+
+        }else{
+            res.send({'msg':"login Failed! Pls Sign-up first!"})
+        }
+    }catch(err){
+        console.log("error", err)
+    }
+
+})
+
+
 
 app.listen(PORT,async()=>{
     try{
