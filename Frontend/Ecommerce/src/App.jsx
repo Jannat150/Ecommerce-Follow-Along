@@ -7,6 +7,7 @@ import Home from './Components/Home'
 import Signup from './Components/Signup'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar'
+import Productform from './Components/Productform'
 
 function App() {
   const [count, setCount] = useState(0)
