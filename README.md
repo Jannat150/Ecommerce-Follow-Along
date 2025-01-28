@@ -171,9 +171,9 @@ By the end of this milestone, I will:
 In Milestone 9, I will be focused on creating a frontend form that allows users to input product details. This form features fields for the product's name, description, price, and the option to upload multiple images. The information collected will be stored in the database and displayed on the product home page, which was developed in a previous milestone. I also explored additional functionalities like admin-only access and role-based restrictions for product uploads.
 
 ### Key Features 🚀  
-Product Input Form: A form tailored for entering product details such as name, description, price, and images.  
-Multiple Image Upload: The capability to upload and showcase several product images.  
-Role-Based Access (Optional): We looked into features that restrict product uploads to admins or users with shop profiles.  
+- Product Input Form: A form tailored for entering product details such as name, description, price, and images.  
+- Multiple Image Upload: The capability to upload and showcase several product images.  
+- Role-Based Access (Optional): We looked into features that restrict product uploads to admins or users with shop profiles.  
 
 ### Learning Outcomes 🎯  
 By the end of this milestone, I have acquired the following skills:  
