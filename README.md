@@ -165,6 +165,25 @@ By the end of this milestone, I will:
 - Obtain first-hand experience designing a responsive layout in grid or flexbox to show several cards.
 - Enhance my skillset in UI/UX design by uncluttering and presentation of information in a clear and visually coherent form.
 
+# E-Commerce Application - MERN Stack Project (Milestone 9)  
+
+### Overview
+In Milestone 9, I will be focused on creating a frontend form that allows users to input product details. This form features fields for the product's name, description, price, and the option to upload multiple images. The information collected will be stored in the database and displayed on the product home page, which was developed in a previous milestone. I also explored additional functionalities like admin-only access and role-based restrictions for product uploads.
+
+### Key Features 🚀  
+Product Input Form: A form tailored for entering product details such as name, description, price, and images.  
+Multiple Image Upload: The capability to upload and showcase several product images.  
+Role-Based Access (Optional): We looked into features that restrict product uploads to admins or users with shop profiles.  
+
+### Learning Outcomes 🎯  
+By the end of this milestone, I have acquired the following skills:  
+- Designing a product submission form that collects essential product information.  
+- Handling multiple image uploads through the form.  
+- Preparing product data for future storage in the database and display.  
+- Investigating user roles and permissions, including admin-only upload access.  
+
+
+
 
 
 
