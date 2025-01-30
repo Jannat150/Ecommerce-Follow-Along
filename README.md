@@ -224,7 +224,7 @@ By completing this milestone, I will have learned:
 - Dynamic Rendering: How to render datamic onto the page using React components (specifically the product card component).
 - Database Connectivity: How to interact with MongoDB, extract data, and feed it to the frontend to dynamically render it.
 
-# E-Commerce Application - MERN Stack Project (Milestone 11)
+# E-Commerce Application - MERN Stack Project (Milestone 12)
 
 ### Overview 🌟
 In Milestone 12, I will build the My Products page, which will display all the products that have been added by a specific user, identified by their email. This page will filter the products in the database using user's email and render them dynamically through a component of the product card.
