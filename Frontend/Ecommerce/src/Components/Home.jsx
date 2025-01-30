@@ -8,7 +8,7 @@ const Home = () => {
   let [productData,setProductData]=useState([])
   useEffect(()=>{
     fetch("http://localhost:8088/products").then((res)=>{
-      res.json
+      return res.json()
     }).then((data)=>{
       console.log(data);
       setProductData(data.data)
