@@ -179,7 +179,26 @@ By the end of this milestone, I have acquired the following skills:
 - Designing a product submission form that collects essential product information.  
 - Handling multiple image uploads through the form.  
 - Preparing product data for future storage in the database and display.  
-- Investigating user roles and permissions, including admin-only upload access.  
+- Investigating user roles and permissions, including admin-only upload access.
+  
+# E-Commerce Application - MERN Stack Project (Milestone 11) 
+
+### Outcome 🎯
+In this milestone, I will build a home page dynamically for our project. The idea is to configure an endpoint to retrieve information of product in MongoDB and rendering this information on the frontend using the previously defined product card component. At the end of this milestone, the application should be able to show in a dynamically updated list the products fetched from the backend database.
+
+### Key Features 🌟
+- MongoDB Integration: Establish a connection with MongoDB to fetch product data.
+- Express Endpoint: Build an endpoint in the Express server that delivers product information to the frontend.
+- Frontend Integration: Provide a function on the frontend that allows a user to initially retrieve the product information from the server.
+- Dynamic Display: Bind the content of the product card component to the loaded data to render the data in a dynamic way on the homepage.
+
+### Learning Outcomes 🎓
+
+By completing this milestone, I will have learned:
+- API Development: How to implement an Express endpoint that extracts data from a database (MongoDB) and transmits it to the frontend.
+- Frontend Data Handling: What steps to take to receive data from the backend and apply it to your frontend application.
+- Dynamic Rendering: How to render datamic onto the page using React components (specifically the product card component).
+- Database Connectivity: How to interact with MongoDB, extract data, and feed it to the frontend to dynamically render it.
 
 
 
