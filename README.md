@@ -180,10 +180,34 @@ By the end of this milestone, I have acquired the following skills:
 - Handling multiple image uploads through the form.  
 - Preparing product data for future storage in the database and display.  
 - Investigating user roles and permissions, including admin-only upload access.
+
+# E-Commerce Application - MERN Stack Project (Milestone 9) 
+
+### Overview 🌟
+In Milestone 10, I concentrate on developing the backend to store product data in our application. This includes the specification of a Mongoose schema for products, definition of a POST endpoint for product storage and checking of the data just in side a POST request before storing it in MongoDB. At the end of this milestone, I will already have a functional system to store product information securely and robustly.
+
+### Key Features ✨
+
+- Mongoose Schema: Describe the structure of product data, such as name field, description field, price field, and image URL field.
+- Data Validation: Make sure all fields pass some criteria before writing to the database (e.g., mandatory fields, proper data type).
+- POST Endpoint: Implemented a POST endpoint that takes a product data as input and validates the given product data, then stores the validated product data in MongoDB.
+- Database Integration: Warehouse product information to MongoDB, and guarantee data integrity and consistency.
+- Optional Features: Experiment with additional features such as:
+- Implementing an admin access system that prevents product upload to only admin users.
+- The adoption of user profiles where only users with a "shop" profile have upload rights to products.
+
+### Learning Outcomes 🎓
+
+After completing Milestone 10, I will be able to:.
+- Creating Mongoose Schemas: A user's preferred method for structuring and validating data in MongoDB with Mongoose.
+- Building API Endpoints: How to create POST endpoints that handle incoming data and store it in the database.
+- Data Validation: Two reasons and processes for validating incoming data to preserve database integrity and avoid data errors are discussed here.
+- Backend Integration: Here's how to connect to the backend to insert data into and get data from MongoDB.
+- Optional Advanced Features: How to improve the system by introducing role-based access control (e.g., administrative rights) and user profiles.
   
 # E-Commerce Application - MERN Stack Project (Milestone 11) 
 
-### Outcome 🎯
+### Overview 🎯
 In this milestone, I will build a home page dynamically for our project. The idea is to configure an endpoint to retrieve information of product in MongoDB and rendering this information on the frontend using the previously defined product card component. At the end of this milestone, the application should be able to show in a dynamically updated list the products fetched from the backend database.
 
 ### Key Features 🌟
@@ -199,6 +223,7 @@ By completing this milestone, I will have learned:
 - Frontend Data Handling: What steps to take to receive data from the backend and apply it to your frontend application.
 - Dynamic Rendering: How to render datamic onto the page using React components (specifically the product card component).
 - Database Connectivity: How to interact with MongoDB, extract data, and feed it to the frontend to dynamically render it.
+
 
 
 
