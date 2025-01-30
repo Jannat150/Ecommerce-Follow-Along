@@ -224,6 +224,29 @@ By completing this milestone, I will have learned:
 - Dynamic Rendering: How to render datamic onto the page using React components (specifically the product card component).
 - Database Connectivity: How to interact with MongoDB, extract data, and feed it to the frontend to dynamically render it.
 
+# E-Commerce Application - MERN Stack Project (Milestone 11)
+
+### Overview 🌟
+In Milestone 12, I will build the My Products page, which will display all the products that have been added by a specific user, identified by their email. This page will filter the products in the database using user's email and render them dynamically through a component of the product card.
+The objective of this milestone is to implement an endpoint that takes a user's email of the form and returns a subset of products matching that user's email to the frontend to be displayed.
+
+### Key Features ✨
+
+- Email-based Filtering: Filter products in the backend by the user’s email to show only the products added by that user.
+- Backend Endpoint: Create an endpoint in Express to fetch the products corresponding to the logged-in user's email from MongoDB.
+- Frontend Integration: Write a function on the frontend to fetch the filtered product data and display it dynamically using the product card component.
+- Dynamic Product Display: Dynamically render a list of products on the frontend and show each product information in a product card.
+
+### Learning Outcomes 🎓
+
+By completing Milestone 12, I will learn:
+
+- Filtering Data by Constraints: How to filter data in the backend based on user-specific information (e.g., email).
+- API Development with Query Parameters: How to define an API endpoint that takes parameters (e.g., email) and optionally filters and returns the data from the database.
+- Frontend Data Handling: Dive into the process of getting fetched and rendered dynamically in a React application with filtered data.
+- Dynamic Rendering with Components: This guide describes how to build and use React components (i.e., the product card) for dynamically showing data according to user selection or filters.
+
+
 
 
 
