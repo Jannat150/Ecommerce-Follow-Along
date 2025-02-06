@@ -276,15 +276,15 @@ The aim of this milestone is to implement a function that allows users to delete
 This feature will assist users in managing product data, ensuring that they can eliminate unnecessary or outdated products.
 
 ### Key Features
-#### Backend:
+- #### Backend:
 ##### API Endpoint for Deletion:
 A new API endpoint will be created to accept a DELETE request containing a product ID. When the server receives this request, it will delete the corresponding product from the MongoDB database using its unique ID.
 
-#### MongoDB Integration:
+- #### MongoDB Integration:
 The server will utilize MongoDB to safely delete the product data from the collection, ensuring the correct document is removed.
 
-#### Frontend:
-##### Delete Button on Product Card:
+- ### Frontend:
+ ##### Delete Button on Product Card:
 A "Delete" button will be added to each product card on the frontend. When clicked, it will trigger a call to the backend API, passing the product ID for deletion.
 ##### Database Operations:
 The application will execute a MongoDB query to delete the product from the database based on the product ID received from the frontend.
