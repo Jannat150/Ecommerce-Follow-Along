@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
 
 import card from "./data.json"
 import Card from './Card'
@@ -16,12 +17,24 @@ const Home = () => {
       console.log(err)
     })
   },[])
+  const handleDelete=async(id)=>{
+    try {
+      let response=await axios.delete(`http://localhost:8088/products/${id}`);
+      console.log(response.data.message)
+      const filteredData=productData.filter((e)=>e._id!=id);
+      setProductData(filteredData)
+    } catch (error) {
+      console.log(error)
+    }
+
+
+  }
   return (
     <>
     
     <div>
       <Card data={card}/>
-      <Cart data={productData}/>
+      <Cart data={productData} handleDelete={handleDelete}/>
     </div>
     </>
   )

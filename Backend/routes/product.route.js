@@ -29,6 +29,15 @@ productRouter.get("/:id", async (req, res) => {
   }
 });
 
+productRouter.delete("/:id", async (req, res) => {
+  try {
+    const id=req.params.id;
+    const product = await productModel.findByIdAndDelete(id);
+    res.status(200).send({ "message": "Successfully deleted the product"});
+  } catch (error) {
+    res.status(500).send({ "Error-message": error.message });
+  }
+});
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, uploadDir);
