@@ -247,6 +247,27 @@ By completing Milestone 12, I will learn:
 - Dynamic Rendering with Components: This guide describes how to build and use React components (i.e., the product card) for dynamically showing data according to user selection or filters.
 
 
+# E-Commerce Application - MERN Stack Project (Milestone 13)
+
+
+### Overview
+In this milestone, I will add functionality to edit the details of previously uploaded products. The task involves adding an "Edit" button on the product card, which allows users to edit the product details. Upon clicking the "Edit" button, the form will auto-fill with the current data, enabling users to modify the details and save the updated information to the MongoDB database.
+
+### Key Features
+- Edit Button on Product Card: An "Edit" button is added to each product card for quick access to modify product details.
+- Auto-fill Form: When the "Edit" button is clicked, the form auto-fills with the existing product data, allowing the user to make changes.
+- Update API Endpoint: A backend API endpoint is created to handle the update of product data in the MongoDB database.
+- Data Persistence: Changes made to the product details are saved and reflected in the database.
+  
+### Learning Outcomes
+
+By the end of this milestone, I will:
+
+- Understand how to write an endpoint that updates existing data in MongoDB.
+- Learn how to pre-fill a form with existing data for editing purposes.
+- Gain experience working with API requests to modify and save data in a database.
+
+
 
 
 
