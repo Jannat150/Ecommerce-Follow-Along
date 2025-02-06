@@ -19,6 +19,15 @@ productRouter.get("/", async (req, res) => {
     res.status(500).send({ "Error-message": error.message });
   }
 });
+productRouter.get("/:id", async (req, res) => {
+  try {
+    const id=req.params.id;
+    const product = await productModel.findById(id);
+    res.status(200).send({ "message": "Successfully retrieved the data from the database", data: product });
+  } catch (error) {
+    res.status(500).send({ "Error-message": error.message });
+  }
+});
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
