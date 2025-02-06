@@ -267,6 +267,36 @@ By the end of this milestone, I will:
 - Learn how to pre-fill a form with existing data for editing purposes.
 - Gain experience working with API requests to modify and save data in a database.
 
+80% of your text is likely AI-generated
+
+# E-Commerce Application - MERN Stack Project (Milestone 14)
+### Overview
+
+The aim of this milestone is to implement a function that allows users to delete a product by clicking a "Delete" button. When this button is clicked, the product’s unique ID will be sent to the server, which will then remove the product from MongoDB using that ID.
+This feature will assist users in managing product data, ensuring that they can eliminate unnecessary or outdated products.
+
+### Key Features
+#### Backend:
+##### API Endpoint for Deletion:
+A new API endpoint will be created to accept a DELETE request containing a product ID. When the server receives this request, it will delete the corresponding product from the MongoDB database using its unique ID.
+
+#### MongoDB Integration:
+The server will utilize MongoDB to safely delete the product data from the collection, ensuring the correct document is removed.
+
+#### Frontend:
+##### Delete Button on Product Card:
+A "Delete" button will be added to each product card on the frontend. When clicked, it will trigger a call to the backend API, passing the product ID for deletion.
+##### Database Operations:
+The application will execute a MongoDB query to delete the product from the database based on the product ID received from the frontend.
+
+### Learning Outcomes
+By completing this milestone, I will:
+
+- Learn how to create API endpoints that interact with a MongoDB database to delete resources.
+- Understand how to use the HTTP DELETE method in RESTful APIs to remove a specific resource.
+- Practice connecting frontend actions (like button clicks) to backend logic by sending data (product ID) to the server.
+- Gain hands-on experience with MongoDB CRUD operations, particularly how to perform the delete operation.
+
 
 
 
