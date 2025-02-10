@@ -298,6 +298,25 @@ By completing this milestone, I will:
 - Gain hands-on experience with MongoDB CRUD operations, particularly how to perform the delete operation.
 
 
+# E-Commerce Application - MERN Stack Project (Milestone 15)
+
+### Overview
+
+In Milestone 15, I created a **Navbar** component in our React application. This component has navigation links to the different pages such as **Home**, **My Products**, **Add Product**, and **Cart**. The Navbar was also made responsive to ensure a smooth experience across all screen sizes.
+
+### Key Features
+
+- **Reusable Navbar**: A single `Nav` component that can be used across all pages.
+- **Responsive Design**: Navbar supports responsiveness across various screen sizes for improved accessibility and user experience.
+- **Smooth Navigation**: Easiest navigation between top-level pages in the application.
+
+### Learning Outcomes
+
+By the end of this milestone, I will
+- Know how to develop and use a reusable **Navbar** component in React.
+- Understand how to add links to navigate different pages inside a React application.
+- Learn how to make components responsive for different screen sizes.
+- Gain practical experience in managing page navigation in a React application.
 
 
 
