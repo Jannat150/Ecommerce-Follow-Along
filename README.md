@@ -318,6 +318,40 @@ By the end of this milestone, I will
 - Learn how to make components responsive for different screen sizes.
 - Gain practical experience in managing page navigation in a React application.
 
+# E-Commerce Application - MERN Stack Project (Milestone 16)
+
+### Overview
+In this milestone, I will focus on creating a product information page for a simple e-commerce application. The page will display product details, allow users to select quantities, and provide an "Add to Cart" button for interaction. This is an important step toward building a more dynamic and interactive React application.
+
+### Key Features
+- Display detailed product information on a dedicated page.
+- Implement a quantity selector for each product.
+- Add functionality for users to add items to the shopping cart.
+
+### Learning Outcomes
+By the end of this milestone, I will:
+- Learn how to create and navigate to a new page in React.
+- Understand how to handle user interactions such as selecting quantity and adding products to the cart.
+- Gain experience in managing state and props in React to handle product data and user actions.
+
+# E-Commerce Application - MERN Stack Project (Milestone 17)
+
+### Overview
+In this milestone, I will be creating a backend endpoint that allows users to add products to their shopping cart and store the cart data in a database. I will modify the user schema to accommodate cart information and implement the necessary API endpoint to receive and save product details.
+
+### Key Features
+- Modify the user schema to store cart products.
+- Create an API endpoint to handle product details and store them in the user's cart in the database.
+
+### Learning Outcomes
+By the end of this milestone, I will:
+- Learn how to extend the user schema to include cart data.
+- Understand how to write a backend endpoint to store cart information in a database.
+- Gain experience in handling product details and integrating them with a backend.
+
+
+
+
 
 
 
