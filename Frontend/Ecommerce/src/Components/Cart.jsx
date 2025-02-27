@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -9,6 +9,10 @@ const Cart = ({data,handleDelete}) => {
     console.log('Navigating to:', `/editproducts/${id}`); // Debug log
     navigate(`/editproducts/${id}`);
   }
+  const handleDetails=(id)=>{
+    navigate(`/products/${id}`)
+  }
+
 
   return (
     <div className='flex flex-wrap w-full justify-center items-center'>
@@ -20,6 +24,7 @@ const Cart = ({data,handleDelete}) => {
             <h4 className='font-bold text-blue-500'>{i.productDescription}</h4>
             <button className='bg-red-500 text-white rounded-xl p-2' onClick={() => handleClick(i._id)}>Edit</button>
             <button className='bg-blue-500 text-white rounded-xl p-2' onClick={() => handleDelete(i._id)}>Delete</button>
+            <button className='bg-blue-500 text-white rounded-xl p-2' onClick={() => handleDetails(i._id)}>View Details</button>
             </div>
         ))
       }

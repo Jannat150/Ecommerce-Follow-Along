@@ -1,3 +1,4 @@
+// product.model.js (Define your product schema)
 const mongoose = require('mongoose');
 const productSchema = mongoose.Schema({
   productName: {

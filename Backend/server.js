@@ -6,12 +6,15 @@ const bcrypt = require('bcrypt');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const { productRouter } = require('./routes/product.route.js');
+const userRoute=require('./routes/userRoute.js')
+const cartRoute=require('./routes/cart.router.js')
 require('dotenv').config();
+const authenticate=require('./middleware/authentication.js')
 
 const app = express();
 const PORT = 8088;
 
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json());
 
 const mongoURL = process.env.MONGODB_URI || "mongodb+srv://Jannat:jannat10175168@jannat.5n3xo.mongodb.net/EcomDB";
@@ -31,10 +34,10 @@ app.get('/ping', (req, res) => {
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'uploads/');
+    cb(Error | null, 'uploads/');
   },
   filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now() + "-" + file.originalname);
+    cb(Error | null, file.fieldname + '-' + Date.now() + "-" + file.originalname);
   }
 });
 
@@ -94,7 +97,7 @@ app.post("/login", async (req, res) => {
       let hashPassword = user[0].password;
       bcrypt.compare(password, hashPassword, function (err, result) {
         if (result) {
-          let token = jwt.sign({ "userID": user[0]._id }, process.env.SECRET_KEY);
+          let token = jwt.sign({ "userID": user[0]._id,"email":user[0].email}, process.env.SECRET_KEY);
           res.send({ "msg": "Login successfully", "token": token });
         } else {
           res.send({ "message": "Invalid credentials" });
@@ -110,6 +113,9 @@ app.post("/login", async (req, res) => {
 });
 
 app.use("/products", productRouter);
+// app.use(authenticate)
+// app.use('/user',userRoute)
+app.use('/cart',  cartRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
